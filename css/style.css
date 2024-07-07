@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: rgba(238, 224, 208);
+    --dark-color: #000;
+    --light-color: #fff;
+    --green-color: green;
+}
+
+.section-margin {
+    margin-top: 50px
+}
+
+/* navbar-top*/
+.navbar-top {
+    height: 10vh;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.navbar-top i {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.navbar-top i:hover {
+    color: var(--main-color);
+    border-radius: 50px;
+}
+
+.navbar-top .logo h3 {
+    font-weight: bold;
+}
+
+/* main-content */
+
+.main-content {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/home.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+
+/* main-content === navbar*/
+.main-content #navbar-color {
+    background-color: var(--main-color);
+}
+
+.main-content .navbar-toggler {
+    background-color: var(--dark-color);
+    font-size: 20px;
+}
+
+.main-content .navbar-nav {
+    margin: auto;
+}
+
+.main-content .nav-link {
+    margin-left: 30px;
+    color: var(--dark-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.main-content .nav-link:hover {
+    color: var(--green-color);
+}
+
+/* main-content === content*/
+.main-content .content {
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+.main-content .content h1 {
+    font-size: 50px;
+}
+
+.main-content .content #btn1 button {
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid var(--dark-color);
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.main-content .content #btn1 button:hover {
+    background: var(--green-color);
+    color: var(--light-color);
+}
+
+/* services*/
+#services .card h5 {
+    text-transform: uppercase;
+}
+
+/* services*/
+#services .card #btn2 button,
+#trendly .card #btn3 button,
+#btn4 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid var(--dark-color);
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#services .card #btn2 button:hover,
+#trendly .card #btn3 button:hover,
+#btn4 button:hover{
+    background-color: var(--main-color);
+    color: var(--light-color);
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    width: 170px;
+}
+
+/* services === #tpc*/
+#services #tpc {
+    box-shadow: 0 0 5px var(--dark-color);
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#services #tpc p,
+#services #tpc #btn2 button {
+    font-weight: 500;
+}
+
+#services #tpc:hover {
+    transform: translateY(-10px);
+}
+
+/* trendly */
+#trendly .card p {
+    font-weight: bold;
+}
+
+#trendly .card #btn3 {
+    text-align: center;
+}
+
+/* footer*/
+#footer{
+    width: 100%;
+    background: var(--dark-color);
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+#footer h1{
+    color: var(--light-color);
+    padding-top: 30px;
+}
+#footer p{
+    color: var(--light-color);
+}
+#footer .icons i{
+    color: var(--light-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+#footer .copyright{
+    color: var(--light-color);
+    margin-top: 20px;
+}
+#footer .credite{
+    color: var(--light-color);
+}
+/* media*/
+@media screen and (max-width:420px) {
+
+    /* navbar-top*/
+    .navbar-top i {
+        font-size: 15px;
+    }
+
+    .navbar-top .logo h3 {
+        font-size: 20px;
+    }
+
+    /* main-content */
+    .main-content .content h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+
+    /* trendly */
+    #trendly .card #btn3 button {
+        width: 100px;
+    }
+
+    #trendly .card h3 {
+        font-size: 30px;
+    }
+    .about p{
+        font-size: 14px;
+    }
+    .about img{
+        height: 400px;
+    }
+}
